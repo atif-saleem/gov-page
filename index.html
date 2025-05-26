@@ -117,24 +117,24 @@
                 <tr>
                   <td>
                     <div class="bg-pink">
-                      <i class="fa-solid fa-file-contract"></i>
+                      <i class="fa-solid  fa-file-contract"></i>
                     </div>
                   </td>
                   <td>Library Aplication Form.pdf</td>
                   <td>9kb</td>
                 </tr>
                 <tr>
-                  <td><i class="fa-solid fa-file-contract"></i></td>
+                  <td> <div class="bg-pink"><i class="fa-solid fa-file-contract"></div></i></td>
                   <td>Public Notice Template.pdf</td>
                   <td>9kb</td>
                 </tr>
                 <tr>
-                  <td><i class="fa-solid fa-file-contract"></i></td>
+                  <td><div class="bg-pink"><i class="fa-solid fa-file-contract"></i></div></td>
                   <td>Text Form.pdf</td>
                   <td>9kb</td>
                 </tr>
                 <tr>
-                  <td><i class="fa-solid fa-file-contract"></i></td>
+                  <td><div class="bg-pink"><i class="fa-solid  fa-file-contract"></i></div></td>
                   <td>Tendring Form.pdf</td>
                   <td>9kb</td>
                 </tr>
@@ -151,7 +151,7 @@
             <table border="1px">
               <thead>
                 <tr>
-                  <th><i class="fa-solid fa-calendar-days"></i></th>
+                  <th><i class="fa-solid clr fa-calendar-days"></i></th>
                   <th>Title</th>
                   <th>Start date</th>
                 </tr>
@@ -159,20 +159,20 @@
               <tbody class="table-2">
                 <tr>
                   <td>
-                    <div class="bg-pink">
-                      <i class="fa-solid fa-calendar-days"></i>
-                    </div>
+                   
+                      <i class="fa-solid clr fa-calendar-days"></i>
+                    
                   </td>
                   <td>Team Meeting</td>
                   <td>6/29/2018 10:00 AM</td>
                 </tr>
                 <tr>
-                  <td><i class="fa-solid fa-calendar-days"></i></td>
+                  <td><i class="fa-solid clr fa-calendar-days"></i></td>
                   <td>Independance Day</td>
                   <td>7/4/2018 12:00 PM</td>
                 </tr>
                 <tr>
-                  <td><i class="fa-solid fa-calendar-days"></i></td>
+                  <td><i class="fa-solid clr fa-calendar-days"></i></td>
                   <td>Team Meeting</td>
                   <td>7/27/2018 10:00 AM</td>
                 </tr>
@@ -213,4 +213,19 @@
       ? '<i class="fa-solid fa-xmark"></i>'
       : '<i class="fa-solid fa-bars"></i>';
   }
+const navicon = document.querySelector(".nav-icons");
+navicon.addEventListener("click", function () {
+  const icons = document.querySelectorAll(".rap");
+  icons.forEach(function (elem) {
+    elem.addEventListener("click", function () {
+      icons.forEach(function (otherElem) {
+        otherElem.classList.remove("bg-red");
+      });
+      this.classList.toggle("bg-red");
+    });
+
+  });
+});
+
+
 </script>
