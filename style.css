@@ -381,6 +381,7 @@ height: 54px;
     }
     .card{
         width: 100%;
+          padding: 20px 10px 3px 10px;
     }
     
 }
