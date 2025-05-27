@@ -32,8 +32,8 @@ nav{
 
 .logo{
     width: 7.5%;
-    height: 70px;
-    padding: 7px 18px;
+       padding: 4px 20px 3px 20px;
+
     overflow: hidden;
 }
 .toggle-menu{
@@ -55,7 +55,6 @@ nav{
 .logo img{
     max-width: 100%;
     object-fit: contain;
-    max-height: 58px;
     cursor: pointer;
 }
 .drop-down{
@@ -153,7 +152,7 @@ nav{
     color: rgb(117, 186, 231);
 }
 .bg-red{
-    background-color: red;
+    background-color: rgb(236 96 85);
 }
 .clr{
     color: hsl(0deg 0% 49.02%);
@@ -182,10 +181,11 @@ main{
    
 }
 .left01 button{
-    padding: 10px 25px 10px 10px;
+    padding: 10px 45px 10px 13px;
     background-color: #000;
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 .raper{
    
@@ -223,7 +223,7 @@ p{
     width: 32.5%;
     background-color: #fff;
     padding: 20px 16px 3px 16px;
-    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 5px 0px -1px rgba(0, 0, 0, 0.1);
 }
 .head{
 text-align: center;
@@ -289,7 +289,7 @@ tr td{
 .bg-pink{
     padding:5px;
     border-radius: 50%;
-    background-color: hsl(298.7deg 41.44% 56.47%);
+    background-color: rgb(188 98 190);
     color: #fff;
     height: 21px;
     width: 21px;
@@ -301,7 +301,7 @@ tr td{
 
 
 
-@media screen and (min-width:320px) and (max-width:1200px){
+@media screen and (min-width:300px) and (max-width:1200px){
     header{
 height: 54px;
     }
@@ -324,6 +324,11 @@ height: 54px;
         width: 52%;
         height: 40px;
         padding-top: 5px;
+    }
+    .toggle-menu i{
+        position: fixed;
+        top: 20px;
+        right: 20px;
     }
     .toggle.active .navbar{
         display:flex ;
@@ -352,7 +357,7 @@ height: 54px;
       height: 270px;
      }
     .logo{
-        width: 85px;
+        width: 53px;
         padding: 7px 4px;
     }
     h2{
@@ -383,12 +388,15 @@ height: 54px;
         width: 100%;
           padding: 20px 10px 3px 10px;
     }
-    
+    .drop-down{
+        width: 90%;
+    }
+    .nav-icons{
+        gap: 10px;
+    }
 }
- {
- 
-   
-    .left01{
-        display: none;
+@media screen and (max-width:400px){
+    .hero{
+        margin-top: 10px;
     }
 }
